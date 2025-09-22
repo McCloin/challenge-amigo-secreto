@@ -7,6 +7,9 @@ function agregarAmigo() {
     if (listadeamigos.includes(nombre)) {
         alert("Este amigo ya está en la lista");
         return;
+    }else if (nombre === "") {
+        alert("Ingresa un nombre válido");
+        return;
     }
     listadeamigos.push(nombre);
     let lista = document.getElementById("listaAmigos");
